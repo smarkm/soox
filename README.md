@@ -24,7 +24,7 @@ soox current suport 2 commands:
 
 ## Release Notes
 
-### version:0.0.3
+### version:0.0.4
 Initial version
 
 
