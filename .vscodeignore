@@ -1,0 +1,7 @@
+.vscode/**
+typings/**
+test/**
+release/**
+.gitignore
+jsconfig.json
+vsc-extension-quickstart.md
