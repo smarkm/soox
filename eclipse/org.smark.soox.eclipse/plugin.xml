@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="Search"
+            id="org.smark.soox.eclipse.commands.category">
+      </category>
+      <command
+            name="soox search"
+            categoryId="org.smark.soox.eclipse.commands.category"
+            id="org.smark.soox.eclipse.commands.sooxSearchCommand">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="org.smark.soox.eclipse.commands.sooxSearchCommand"
+            class="org.smark.soox.eclipse.handlers.SooxSearchHandler">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="org.smark.soox.eclipse.commands.sooxSearchCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="F12"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               label="Search"
+               mnemonic="M"
+               id="org.smark.soox.eclipse.menus.sampleMenu">
+            <command
+                  commandId="org.smark.soox.eclipse.commands.sooxSearchCommand"
+                  mnemonic="S"
+                  id="org.smark.soox.eclipse.menu.sooxSearchCommand">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="org.smark.soox.eclipse.toolbars.sampleToolbar">
+            <command
+                  commandId="org.smark.soox.eclipse.commands.sooxSearchCommand"
+                  icon="icons/soox.gif"
+                  tooltip="soox"
+                  id="org.smark.soox.eclipse.toolbars.sooxSearchCommand">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+</plugin>
