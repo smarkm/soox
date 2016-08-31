@@ -1,0 +1,81 @@
+{
+    "name": "soox",
+    "displayName": "soox",
+    "description": "search easy",
+    "version": "0.0.4",
+    "publisher": "smark",
+    "icon":"images/so.ico",
+    "keywords": [
+        "search",
+        "soox"
+    ],
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:soox.search",
+         "onCommand:soox.cmd"
+    ],
+    "main": "./soox",
+    "contributes": {
+        "configuration": {
+            "properties": {
+                "so.suffix.baidu": {
+                    "type": "string",
+                    "default": "d",
+                    "description": "user www.baidu.com to search"
+                },
+                "so.suffix.google": {
+                    "type": "string",
+                    "default": "g",
+                    "description": "user Google to search"
+                },
+                "so.suffix.bing": {
+                    "type": "string",
+                    "default": "b",
+                    "description": "user Bing to search"
+                },
+                "so.suffix.stackoverflow": {
+                    "type": "string",
+                    "default": "s",
+                    "description": "user StackOverFlow to search"
+                },
+                "so.suffix.360": {
+                    "type": "string",
+                    "default": "3",
+                    "description": "user 360 to search"
+                },
+                  "so.suffix.default": {
+                    "type": "string",
+                    "default": "so.suffix.baidu",
+                    "description": "user 360 to search"
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "soox.search",
+                "title": "soox"
+            }
+        ],
+        "keybindings":[
+            {
+                "command": "soox.search",
+                "key": "f12"
+            },
+             {
+                "command": "soox.cmd",
+                "key": "f10"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "vscode": "^0.11.0"
+    }
+}
