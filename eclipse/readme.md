@@ -6,7 +6,7 @@
 * Restart eclipse
 
 ## Configuration
-You can edit the `engines.properties` in `eclipse/configuration/org.smark.soox.eclipse` fold,customize your own search engine.  
+You can edit the `engines.properties` in `eclipse/configuration/org.smark.soox.eclipse` folder,customize your own search engine.  
 The content like this:  
   
 	d=https://www.baidu.com/s?wd=
