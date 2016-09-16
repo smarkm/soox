@@ -9,7 +9,7 @@
             id="org.smark.soox.eclipse.commands.category">
       </category>
       <command
-            name="soox search"
+            name="Soox search"
             categoryId="org.smark.soox.eclipse.commands.category"
             id="org.smark.soox.eclipse.commands.sooxSearchCommand">
       </command>

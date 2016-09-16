@@ -1,7 +1,7 @@
-# soox eclipse plugin
+# Soox eclipse plugin
 
-## install
-* Download soox jar file
+## Install
+* [Download](https://github.com/smarkm/soox/releases) soox jar file
 * Put the soox jar to `eclipse/dropins`
 * Restart eclipse
 
@@ -16,4 +16,6 @@ The content like this:
 	s=http://stackoverflow.com/search?q=
 	y=https://www.baidu.com/s?wd=
 	m=http://mvnrepository.com/search?q=
+	w=http://www.wolframalpha.com/input/?i=
+
 
