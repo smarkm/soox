@@ -1,5 +1,5 @@
 # Soox 
-oox is a search tool ,you can trigger search dialog quickly without to live your developer tool,  
+soox is a search tool ,you can trigger search dialog quickly without to live your developer tool,  
 * without to live your IDE for open browser,soox will open your browser automatically.  
 * use different search engine with single char suffix like `d`,`g`,`b`,etc.
  
