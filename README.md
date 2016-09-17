@@ -1,7 +1,8 @@
 # Soox 
-soox is a search tool ,you can trigger search dialog quickly without to live your developer tool,  
-* without to live your IDE for open browser,soox will open your browser automatically.  
-* use different search engine with single char suffix like `d`,`g`,`b`,etc.
+Soox is a search tool ,you can trigger search dialog quickly without to live your developer tool,  
+* Without to live your IDE for open browser,soox will open your browser automatically.  
+* Use different search engine with single char suffix like `d`,`g`,`b`,etc.
+* Press F12 to open search dialog.
  
 `'keywords suffix'` : suffix maybe `g,d,b,3,h,s`  
 `'vscode g'`  : serach vscode use google    
@@ -9,7 +10,8 @@ soox is a search tool ,you can trigger search dialog quickly without to live you
 `'vscode d'` : serach vscode use baidu  
 `'vscode 3'` : serach vscode use 360     
 `'vscode h'` : serach vscode use github   
-`'vscode s'` : serach vscode use stackoverflow 
+`'vscode s'` : serach vscode use stackoverflow   
+`'vscode w'` : serach vscode use WolframAlpha
 
 ## Supports  
 * vscode [vscode help](vscode/README.md)
