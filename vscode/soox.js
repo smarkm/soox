@@ -73,7 +73,7 @@ function enginPrefix(tag) {
         case "3": uriPre = "https://www.so.com/s?q="; break;
         case "s": uriPre = "http://stackoverflow.com/search?q="; break;
         case "h": uriPre = "https://github.com/search?q="; break;
-        
+        case "w": uriPre = "http://www.wolframalpha.com/input/?i=";break;
         default:
             uriPre = "https://www.google.com/#q=";
     }
