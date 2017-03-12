@@ -22,6 +22,9 @@ public class Engines {
 			if (engine==null) {
 				engine = engines.get("g");
 			}
+			if (engine==null) {
+				return "https://www.google.com/#q=";
+			}
 			return engine;
 		}
 		
@@ -66,16 +69,8 @@ public class Engines {
 		}
 		
 		private static String buildEngineConfigPath(){
-			StringBuilder path = new StringBuilder(System.getProperty("osgi.configuration.area"))
-					.append(File.separator+"org.smark.soox.eclipse")
-					.append(File.separator+"engines.properties");
-			URL url = null;
-			try {
-				url = new URL(path.toString());
-			} catch (MalformedURLException e) {
-				e.printStackTrace();
-			}
-			System.out.println(url);
-			return url.getPath();
+			StringBuilder path = new StringBuilder(System.getProperty("user.home"))
+					.append(File.separator+"soox_engines.properties");
+			return path.toString();
 		}
 }
