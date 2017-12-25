@@ -9,7 +9,7 @@
             id="org.smark.soox.eclipse.commands.category">
       </category>
       <command
-            name="Soox search"
+            name="&amp;Soox search"
             categoryId="org.smark.soox.eclipse.commands.category"
             id="org.smark.soox.eclipse.commands.sooxSearchCommand">
       </command>
@@ -35,13 +35,13 @@
       <menuContribution
             locationURI="menu:org.eclipse.ui.main.menu?after=additions">
          <menu
-               label="Search"
-               mnemonic="M"
-               id="org.smark.soox.eclipse.menus.sampleMenu">
+               id="org.smark.tools.menu.Tool"
+               label="&amp;Tool">
             <command
                   commandId="org.smark.soox.eclipse.commands.sooxSearchCommand"
-                  mnemonic="S"
-                  id="org.smark.soox.eclipse.menu.sooxSearchCommand">
+                  icon="icons/soox.gif"
+                  id="org.smark.soox.eclipse.menu.sooxSearchCommand"
+                  mnemonic="S">
             </command>
          </menu>
       </menuContribution>
@@ -57,6 +57,14 @@
             </command>
          </toolbar>
       </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="org.smark.soox.eclipse.SooxPreferencePage"
+            id="org.smark.soox.eclipse.preferPage"
+            name="Soox">
+      </page>
    </extension>
 
 </plugin>

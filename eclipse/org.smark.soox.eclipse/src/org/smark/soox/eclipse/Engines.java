@@ -4,8 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -72,5 +70,17 @@ public class Engines {
 			StringBuilder path = new StringBuilder(System.getProperty("user.home"))
 					.append(File.separator+"soox_engines.properties");
 			return path.toString();
+		}
+
+		public static void deleteEngine(SearchEngine engine) {
+			engines.remove(engine.suffix);
+		}
+		
+		public static void updateEngine(SearchEngine newEngine) {
+			addEngine(newEngine);
+		}
+
+		public static void addEngine(SearchEngine newEngine) {
+			engines.put(newEngine.suffix, newEngine.engine);
 		}
 }

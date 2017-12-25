@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-AutoUpdate-Show-In-Client: true
-OpenIDE-Module: org.smark.soox.netbeans
-OpenIDE-Module-Localizing-Bundle: org/smark/soox/netbeans/Bundle.properties
-OpenIDE-Module-Specification-Version: 1.0
-
