@@ -1,16 +1,7 @@
 package org.smark.soox.eclipse.handlers;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
-import java.util.Properties;
-import java.util.ResourceBundle;
 import java.util.Set;
 
 import org.eclipse.core.commands.AbstractHandler;
