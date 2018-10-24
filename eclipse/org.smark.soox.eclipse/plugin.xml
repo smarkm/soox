@@ -35,8 +35,8 @@
       <menuContribution
             locationURI="menu:org.eclipse.ui.main.menu?after=additions">
          <menu
-               id="org.smark.tools.menu.Tool"
-               label="&amp;Tool">
+               id="org.smark.tools.menu.Tools"
+               label="&amp;Tools">
             <command
                   commandId="org.smark.soox.eclipse.commands.sooxSearchCommand"
                   icon="icons/soox.gif"
