@@ -24,7 +24,7 @@ public class TranslatorHandler extends AbstractHandler {
 	String defaultEngine = "";
 	
 	static {
-		engineMap.put("g", "https://translate.google.com/#auto/en/zh-CN");
+		engineMap.put("g", "https://translate.google.com/#auto/en/zh-CN/");
 		engineMap.put("b", "https://fanyi.baidu.com/#zh/en/");
 		engineMap.put(defaultKey, engineMap.get("g"));
 	}
