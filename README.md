@@ -1,3 +1,6 @@
+# This project already closed, some of the code move to https://github.com/smarkm/devtools
+
+# History -------------------------
 # Soox 
 Soox is a search tool ,you can trigger search dialog quickly without to live your developer tool,  
 * Without to live your IDE for open browser,soox will open your browser automatically.  
